@@ -1,0 +1,45 @@
+Post
+----
+-PostId
+-UserId
+-Num_Comments
+-Num_Likes
+------------ Done, migration file updated and model file updated 
+
+Comments 
+--------
+-Comment_ID
+-UserId
+-PostId
+-Text
+-------- Is correct
+
+Replies
+-------
+-Reply_ID
+-Text
+-Comment_ID
+------------ Fixed 
+
+User
+-----
+-User_ID
+-Num_Posts
+-Name
+-Email
+-Num_Connections
+------------------ Fixed
+
+Connections 
+------------
+-Connection_ID
+-Requester_ID
+-Requestee_ID
+-Accepted
+------------- All constraints added
+Likes 
+-----
+-Like_ID
+-Post_ID
+-User_ID
+--------- All constraints added
